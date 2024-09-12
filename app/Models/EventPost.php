@@ -9,6 +9,8 @@ class EventPost extends Model
 {
     use HasFactory;
 
+    protected $table = 'event_posts';
+
     protected $fillable = [
         'title',
         'description',
@@ -31,4 +33,11 @@ class EventPost extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class);
+    }
+
+    
 }
