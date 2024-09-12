@@ -27,8 +27,6 @@ class EventPost extends Model
         'accecciblity_disablity',
     ];  
 
-
-
     public function owner()
     {
         return $this->belongsTo(User::class);
