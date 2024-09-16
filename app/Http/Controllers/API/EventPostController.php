@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\EventPost;
 use Illuminate\Http\Request;
 
 class EventPostController extends Controller
@@ -12,7 +13,7 @@ class EventPostController extends Controller
      */
     public function index()
     {
-        //
+        EventPost::all();
     }
 
     /**
