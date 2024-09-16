@@ -13,7 +13,7 @@ class EventPostController extends Controller
      */
     public function index()
     {
-        EventPost::all();
+        return EventPost::all();
     }
 
     /**
