@@ -18,10 +18,9 @@ class EventPost extends Model
         'end_date',
         'location_name',
         'location_url',
-        'tags',
         'event_image_url',
         'owner_id', // Foreign key
-        'price',
+        'entry_fee',
         'restriction_age_min',
         'restriction_age_max',
         'accecciblity_disablity',

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('location_name');
             $table->string('location_url');
             $table->string('event_image_url');
-            $table->integer('price')->nullable();
+            $table->integer('entry_fee')->default(0);
             $table->unsignedTinyInteger('restriction_age_min')->nullable();
             $table->unsignedTinyInteger('restriction_age_max')->nullable();
             $table->boolean("accecciblity_disablity")->default(false);
