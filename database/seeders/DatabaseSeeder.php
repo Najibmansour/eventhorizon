@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\EventPost;
 use App\Models\User;
 use Database\Factories\EventPostFactory;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -21,6 +22,6 @@ class DatabaseSeeder extends Seeder
             'email' => 'test@example.com',
         ]);
 
-        // EventPostFactory::times(10)->create();
+        EventPost::factory(10)->create();
     }
 }

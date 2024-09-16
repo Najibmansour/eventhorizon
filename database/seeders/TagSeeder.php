@@ -1,0 +1,22 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Tag;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class TagSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     */
+    public function run(): void
+    {
+        $tags = ["Study Group", "Club Meeting", "Workshop", "Lecture", "Seminar", "Hackathon", "Coding Challenge", "Fundraiser", "Social", "Volunteer", "Service", "Cultural Night", "Talent Show", "Open Mic", "Debate", "Roundtable", "Panel", "Speaker", "Networking", "Career Fair", "Resume Review", "Job Prep", "Tech Talk", "Bootcamp", "Startup Pitch", "Business Plan", "Entrepreneurship", "Leadership", "Team Building", "Hiking", "Camping", "Basketball", "Soccer", "Volleyball", "Frisbee", "Yoga", "Dance", "Martial Arts", "Self-Defense", "Fitness", "Chess", "Gaming", "Esports", "Board Games", "Trivia", "Puzzle", "Movie Night", "Film Discussion", "Anime Club", "Cultural Exchange", "Language Learning", "International Night", "Study Abroad", "Photography", "Art Show", "Design Thinking", "Graphic Design", "Writing", "Poetry", "Jam Session", "Karaoke", "Choir", "DJ Night", "Fashion", "Sustainability", "Cleanup", "Recycling", "Green Energy", "STEM Club", "Biology", "Chemistry", "Physics", "Math", "Robotics", "AI", "Data Science", "Blockchain", "Game Dev", "3D Printing", "Virtual Reality", "App Dev", "UI/UX", "Product Design", "Case Competition", "Finance", "Investment", "Stock Market", "Cryptocurrency", "Political Debate", "Model UN", "Philosophy", "Ethics", "Psychology", "Mindfulness", "Mental Health", "Wellness", "Food Fest", "Cook-Off", "Bake Sale", "Potluck", "Tea Social", "Speed Networking", "Icebreakers", "Diversity", "LGBTQ+", "Women's Leadership", "Alumni", "Recruitment", "Orientation", "Peer Mentoring", "Elections", "Public Speaking", "Toastmasters", "Charity Run", "Blood Drive", "Health Fair", "First Aid", "CPR", "Veterans Support", "Outreach", "Food Drive", "Climate Talk", "Green Summit", "Clean Energy", "Global Warming", "Water Conservation", "Animal Rights", "Pet Adoption", "Campus Tour", "Study Tips", "Exam Prep", "Tutoring", "Research Symposium", "Thesis Presentation", "Library Tour", "Scholarship Info", "Financial Aid", "Grant Writing", "Creative Night", "Heritage Celebration", "Black History", "Lunar New Year", "Hispanic Heritage", "Diwali", "Ramadan", "Eid", "Christmas", "Halloween", "Thanksgiving", "Valentine's Day", "Earth Day", "World Health", "Pride", "Veterans Day", "Memorial Day", "Election", "Social Justice", "Human Rights", "Immigration", "Peacebuilding", "Non-Profit", "Volunteer Fair", "Internship Info", "Career Panel", "Startup Tips", "Venture Capital", "Dance Off", "Cooking Contest", "Film Fest", "Poetry Slam", "Art Exhibition", "Photography Contest", "Book Club", "Literature Night", "Craft Fair", "Fashion Swap", "Vintage Market", "Sustainable Fashion", "Green Club", "Gardening", "Farmers Market", "Plant Swap", "Nature Walk", "Bird Watching", "Tree Planting", "Campus Gardening", "Zero Waste", "Climate Action", "Wildlife Conservation", "Ocean Cleanup", "Renewable Energy", "Solar Power", "Wind Energy", "Green Business", "Sustainable Food", "Environmental Law", "Climate Policy", "Humanitarian Aid", "Public Health", "Marathon", "Cycling", "Swim Meet", "Track and Field", "Badminton", "Ping Pong", "Bowling", "Dodgeball", "Cheerleading", "Hip-Hop", "Salsa", "Zumba", "Ballroom Dance", "Tango", "Swing Dance", "Folk Dance", "Drumming", "Choir Concert", "Band Practice", "Art Walk", "Calligraphy", "Pottery", "Sculpting", "Mural Painting", "Street Art", "Graffiti", "Graphic Novel", "Comic Club", "Sci-Fi Night", "Fantasy Club", "Fandom Meet", "Cosplay", "Anime Screening", "K-Pop Dance", "Language Exchange", "Cooking Demo", "Baking", "Coffee Tasting", "Tea Ceremony", "Vegan Cooking", "Nutrition Talk", "Mindful Eating", "Holistic Health", "Meditation", "Stress Relief", "Time Management", "Study Hacks", "Student Success", "Financial Planning", "Budgeting", "Investment Tips", "Legal Help", "Tenant Rights", "Equality", "Suicide Prevention", "Peer Counseling", "Support Group", "Student Activism", "Campus Protest", "Political Action", "Public Service", "Civic Engagement", "Diversity Workshop", "Multicultural Night", "History Talk", "Archaeology", "Sociology", "Law Society", "Business Club", "Economics", "Marketing", "Investment Club"];    
+        foreach ($tags as $tag) {
+            \App\Models\Tag::create(['name' => $tag]);
+        }
+   
+    }
+}
