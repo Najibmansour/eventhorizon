@@ -18,6 +18,6 @@ class Tag extends Model
 
     public function posts()
     {
-        return $this->belongsToMany(EventPost::class);
+        return $this->belongsToMany(EventPost::class, "event_post_tag");
     }
 }

@@ -19,7 +19,6 @@ return new class extends Migration
             $table->dateTime('end_date');
             $table->string('location_name');
             $table->string('location_url');
-            $table->string('tags');
             $table->string('event_image_url');
             $table->integer('price')->nullable();
             $table->unsignedTinyInteger('restriction_age_min')->nullable();
