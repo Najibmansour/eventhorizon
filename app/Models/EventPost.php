@@ -20,7 +20,7 @@ class EventPost extends Model
         'location_url',
         'tags',
         'event_image_url',
-        'user_id', // Foreign key
+        'owner_id', // Foreign key
         'price',
         'restriction_age_min',
         'restriction_age_max',
@@ -34,7 +34,7 @@ class EventPost extends Model
 
     public function tags()
     {
-        return $this->belongsToMany(Tag::class);
+        return $this->belongsToMany(Tag::class, "event_post_tag");
     }
 
     

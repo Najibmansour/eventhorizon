@@ -25,7 +25,7 @@ class EventPostFactory extends Factory
         'location_url' => fake()->url(),
         'tags'=> fake()->word(),
         'event_image_url' => fake()->url(),
-        'user_id' => 1, // Foreign key
+        'owner_id' => 1, // Foreign key
         'price' => fake()->numberBetween(0, 1000),
         'restriction_age_min' => null,
         'restriction_age_max'=> null,
