@@ -9,5 +9,6 @@ Route::get('/user', function (Request $request) {
 
 
 Route::get('/events', [\App\Http\Controllers\API\EventPostController::class, 'index']);
+Route::post('/events/create', [\App\Http\Controllers\API\EventPostController::class, 'store']);
 
 
